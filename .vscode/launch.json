@@ -1,0 +1,53 @@
+{
+    "configurations": [
+        
+        {
+            "type": "java",
+            "name": "QuestionserviceApplication",
+            "request": "launch",
+            "mainClass": "com.quiz.questionservice.QuestionserviceApplication",
+            "projectName": "questionservice",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=53557 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=questionservice"
+        },
+        {
+            "type": "java",
+            "name": "QuestionserviceApplication 9082",
+            "request": "launch",
+            "mainClass": "com.quiz.questionservice.QuestionserviceApplication",
+            "projectName": "questionservice",
+            "vmArgs": " -Dserver.port=9082"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-QuizserviceApplication<quizservice>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.quiz.quizservice.QuizserviceApplication",
+            "projectName": "quizservice",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=60935 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=quizservice"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceregisteryApplication<serviceregistery>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.server.serviceregistery.ServiceregisteryApplication",
+            "projectName": "serviceregistery",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=53542 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=serviceregistery"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ApigatewayApplication<apigateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.api.apigateway.ApigatewayApplication",
+            "projectName": "apigateway",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
